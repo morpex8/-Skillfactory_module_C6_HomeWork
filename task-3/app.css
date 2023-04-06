@@ -1,0 +1,174 @@
+body {
+    width: 20%;
+    margin: 0 auto;
+    list-style: none;
+    text-decoration: none;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-left: 20px;
+    color: black;
+}
+.instructions {
+    padding: 10px;
+}
+.instructions li {
+    
+    list-style: none;
+    text-decoration: none;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px;
+    padding: 10px;
+    box-shadow: 3px 3px 10px 3px #666;
+}
+
+.chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: calc(100% -20px);
+    height: calc(100% - 55px);
+    margin-top: 10px;    
+    padding: 10px;
+    border: 3px solid #bad7ec;
+    overflow-y: auto;
+}
+
+.text-input {
+    width: 55%;
+    margin-right: 10px;
+    padding: 10px;
+    border: 3px solid #bad7ec;
+    outline: none;
+}
+
+.btn {
+    width: 25%;
+    padding: 10px;
+    border: 3px solid transparent;
+    outline: none;
+    background-color: #bad7ec;
+    transition: .2s;
+}
+
+.btn:hover {
+    border: 3px solid #bad7ec;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btn:first-of-type {
+    margin-right: 15px;
+}
+
+.message {
+    padding: 20px;
+}
+
+.user-message,
+.bot-message,
+.bot-message__geo {
+    width: max-content;
+    margin: 5px;
+    padding: 8px 10px;
+}
+
+.user-message {
+    align-self: flex-start;
+    border-radius: 10px 10px 10px 5px;
+    border: 3px solid tomato;
+}
+
+.bot-message,
+.bot-message__geo {
+    align-self: flex-end;
+    border-radius: 10px 10px 5px 10px;
+    border: 3px solid #bad7ec;    
+}
+
+.bot-message__geo {
+    text-decoration: none;
+    background-color: #bad7ec;
+    color: #000;
+    transition: .5s;
+}
+
+.bot-message__geo:hover {
+    background-color: transparent;
+    border: 3px solid #bad7ec;
+    cursor: pointer;
+}
+
+.btn-close {
+    position: absolute;
+    top: -35px;
+    right: 0;
+    padding: 5px;
+    border: 3px solid transparent;
+    background-color: #bad7ec;
+    outline: none;
+}
+
+.btn-close:hover {
+    background-color: transparent;
+    cursor: pointer;
+    border: 3px solid #bad7ec;
+}
+
+.info-box {
+    position: absolute;
+    top: -35px;
+    right: 35px;
+    padding: 5px;
+    border: 3px solid transparent;
+    border-bottom-width: 2px;
+    background-color: #bad7ec;
+    outline: none;
+}
+.info-box:hover {
+    background-color: transparent;
+    cursor: pointer;
+    border: 3px solid #bad7ec;
+
+}
+.info {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .info .infotext {
+    visibility: hidden;
+    width: 500px;
+    border: 3px solid #bad7ec;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .info:hover .infotext {
+    visibility: visible;
+    opacity: 1;
+  }

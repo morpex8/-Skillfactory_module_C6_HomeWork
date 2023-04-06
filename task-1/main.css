@@ -1,0 +1,44 @@
+body {
+    width: 20%;
+    margin: 0 auto;
+}
+h2 {
+    color: black;
+}
+
+a.btn {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.btn {
+    display: flex;
+    padding: 7px 15px;
+    border: 1px solid black;
+	border-radius: 15px;
+    outline: none;
+    background-color: transparent;
+    font-weight: 500;
+    color: black;
+    transition: .5s;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: gray;
+    color: #fff;
+}
+
+.btn-text {
+    margin-right: 10px;
+}
+
+.icon {
+    display: none;
+}
+
+.icon.active {
+    display: inline;
+}

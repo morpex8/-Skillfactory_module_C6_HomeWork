@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+    <h2>Task-3 (C6.6)</h2>
+        <div class="container">
+            <div class="chat-header">
+                <input class="text-input" type="text" placeholder="Введите сообщение">
+                <button class="btn btn-send">Отправить</button>
+                <button class="btn btn-geo">Гео</button>
+            </div>
+            <div class="chat-body"></div>
+            <div class="info-box">
+                <div class="info">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info" viewBox="0 0 16 16">
+                        <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                    </svg>
+                    <span class="infotext">
+                        <div class="instructions">
+                            <h3>Бот умеет:</h3>
+                            <ul>
+                                <li>Отвечать на приветствие - введите <strong>"привет" </strong></li>
+                                <li>Выводить текущее время - <strong>время</strong></li>
+                                <li>Выводить текущую дату - <strong>день</strong></li>
+                                <li>Если бот не знает команду - будет повторять введённое пользователем</li>
+                            </ul>
+                        </div> 
+                    </span>
+                </div>
+            </div>
+
+            <button class="btn-close" title="Завершить чат">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                </svg>
+            </button>
+        </div>
+
+<script src="app.js" defer></script>
+</body>
+</html>
